@@ -1,0 +1,12 @@
+Para el siguiente commit hay q tener en cuenta que Color y Spectral Class son ordinales.
+Color tiene errroes en el csv: Blue White, Blue white, Blue-white
+Evaluacion de los dos Kmeans: make_blobs()
+
+Tener al menos dos algoritmos de clusters
+
+Los colores indican energia por lo que existe un orden de energia y hay q tener cuidado al hacer onehot encoding 
+con tener en cuenta ese orden ya que nos puede salir q red es muy similar a blue y no es verdad, es todo lo contrario
+por lo q debemos establecer el orden de onehot encoding siguiendo esta lista:
+
+['Red','Orange-Red,'orange', 'Pale Yellow Orange', 'Yellowish', 'yellow-white',
+ 'Whitish', 'Yellowish White', 'White-Yellow', 'White', 'Blue-white', 'Blue']
